@@ -1,0 +1,261 @@
+:root{
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+    --Pink: hsl(322, 100%, 66%);
+}
+*,ul{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+/* start header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 40px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header .image{ width: 150px }
+.header .image img{
+width: 100%;
+height: auto;
+}
+.header .btn{
+    border:none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+.header .btn:hover{
+    background-color: #ccc;
+}
+/* end header */
+
+/* start hero section */
+.HeroSection{
+    background-color:  var(--Very-Pale-Cyan);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:30px 10px;
+    flex-wrap: wrap;
+    padding-inline: 40px;
+    height: 100vh;
+    font-family: "Poppins", sans-serif ;
+}
+.HeroSection .heroInfo{ max-width: 35% }
+.HeroSection .heroInfo .hero-title{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: var(--Very-Dark-Cyan);
+}
+.HeroSection .heroInfo .hero-desc{ margin-bottom: 20px }
+.HeroSection .heroInfo .hero-btn{
+    padding: 10px 20px;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Cyan);
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+}
+.HeroSection .heroInfo .hero-btn:hover{
+    color: var(--Very-Dark-Cyan);
+    background-color: transparent;
+}
+.HeroSection .heroImg{ width: 45% }
+.HeroSection .heroImg img{
+    width: 100%;
+    height: auto;
+}
+/* end hero section */
+
+/* start main section */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-block: 50px;
+}
+.main .main-section{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    width: 90%;
+    margin-inline: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:30px;
+}
+.main .main-section .main-info{ max-width: 600px }
+.main .main-section .main-info .main-title{
+    color: var(--Very-Dark-Cyan);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.main .main-section .main-info .main-desc{
+    color: var(--Grayish-Blue);
+    line-height: 30px;
+    font-size: 18px;
+}
+.main .main-section .main-img{ max-width: 400px }
+.main .main-section .main-img img{ width: 100% }
+/* end main section */
+
+/* start banner */
+.banner{
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding-block: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    top: 50px;
+}
+.banner button{
+    padding: 10px 20px;
+    background-color: var(--Pink);
+    color: var(--Very-Pale-Cyan);
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    width: 60%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.banner button:hover{
+    color: var(--Very-Dark-Cyan);
+    background-color: transparent;
+}
+/* end banner */
+
+/* start footer */
+.footer{
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-inline: 30px;
+}
+.footer .main-footer{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.footer .main-footer .article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .main-footer .article .footer-img{
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.footer .main-footer .article .MainFooterRow li{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.footer .main-footer .article .MainFooterRow li img{
+    position: relative;
+    top: 5px;
+}
+.footer .main-footer .article .MainFooterRow li p{ color: var(--Grayish-Blue) }
+.footer .main-footer .article .pages li,
+.footer .main-footer .article .important-links li{
+padding: 10px;
+margin-bottom: 5px;
+font-size: 18px;
+color: var(--Grayish-Blue);
+transition: .3s;
+cursor: pointer;
+}
+.footer .main-footer .article .pages li:hover,
+.footer .main-footer .article .important-links li:hover{
+color: white;
+margin-left: 10px;
+}
+.footer .main-footer .article .social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+.footer .main-footer .article .social-media li{
+    font-size: 18px;
+    border: 1px solid white;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+.footer .main-footer .article .social-media li:hover{
+    background-color: white;
+    color: black;
+}
+
+.footer .copyright{
+    text-align: center;
+    border-top:1px solid var(--Grayish-Blue);
+    padding-block: 5px;
+}
+/* end footer */
+
+
+/* start responsive design */
+@media(max-width:1000px){
+    .HeroSection{
+        flex-direction: column;
+        justify-content: center;
+        padding-block: 30px;
+    }
+    .HeroSection .heroInfo{
+        min-width: 100%;
+    }
+    .HeroSection .heroImg{
+        min-width: 60%;
+    }
+}
+@media(max-width:1360px){
+    .HeroSection .heroInfo{
+        max-width: 50%;
+    }
+}
+@media(max-width:715px){
+    .main .main-section{
+        padding-block: 30px;
+        text-align: center;
+        flex-direction: column;
+    }
+    .main .main-section .main-info{ max-width:80% }
+}
+@media(max-width:1110px){.footer .main-footer{ grid-template-columns: repeat(3,minmax(0,1fr)) } }
+@media(max-width:900px){ .footer .main-footer{ grid-template-columns: repeat(2,minmax(0,1fr)) } }
+@media(max-width:650px){ .footer .main-footer{ grid-template-columns: repeat(1,minmax(0,1fr)) } }
+/* end responsive design */
